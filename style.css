@@ -12,7 +12,7 @@
 
     /*--font--*/
 
-    --body-font: font-family: 'Poppins', sans-serif;
+    --body-font:'Poppins', sans-serif;
     --biggest-font-size: 3rem;
     --small--font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -58,7 +58,7 @@
 
 body{
     margin: 0;
-    font-family: var(--body-font);
+    font-family:var(--body-font);
     background-color: var(--body-color);
     color: var(--text-color);
 }
@@ -218,4 +218,32 @@ a{
 
 .clock__logo:hover{
     color: var(--first-color); 
+}
+
+
+.clock__text{
+    display: flex;
+    justify-content: center;
+}
+
+.clock__text-hour,
+.clock__text-minutes{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+.clock__text-AMPM{
+    font-size: var(--tiny-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-left: var(--mb-0-25);
+
+}
+
+.clock__date{
+    text-align: center;
+    color: black;
+    font-size: var(--small--font-size);
+    font-weight: var(--font-medium);
 }
